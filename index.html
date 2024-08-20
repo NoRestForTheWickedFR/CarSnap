@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is my first website with help of a YouTube video">
+        <title> First Website </title>
+        <link rel="stylesheet" href="main.css">
+    <body>
+        <footer>
+            <div id="navbar"class="navbar">
+                <div class="container">
+                    <a class="logo" href="index.html">Car<span>Snap</span></a>
+                    <image id="mobile-button" class="mobile-menu" src="images/menu.svg" alt="open navigation"></image>
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="images/x.svg" alt="Close navigation">
+                        <ul class="primary-nav">
+                            <li class="current"><a href="page2.html">Home</a></li>
+                            <li><a href="page2.html">Features</a></li>
+                            <li><a href="page2.html">Pricing</a></li>
+                        </ul>
+
+                        <ul class="secondary-nav">
+                            <li><a href="page2.html">Contact</a></li>
+                            <li class="support-me-button"><a href="page2.html">Support me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">This is a very Cool &amp; Message</p>
+                    <h1>A cool website which shows you cool cars</h1>
+                    <div class="hero-button">
+                        <a href="#" class="primary-button">Try for free</a>
+                        <a href="#" class="watch-video-button">
+                            <img src="images/watch-video.svg" alt="Watch a video"> <div class="text"> Watch a video</div>
+                        </a>
+                    </div>
+                </div>
+                <img src="images/aston_martin.jpg" class="hero-img" alt="Illustration">
+            </div>
+        </section>
+        
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Ferrari</li>
+                    <li>Lamborghini</li>
+                    <li>Porsche</li>
+                    <li>McLaren</li>
+                    <li>Jaguar</li>
+                    <li>Aston Martin</li>
+                </ul>
+
+                <img src="images/2005-Ferrari-F430-Spider.jpg">
+            </div>
+        </section>
+
+        <section class="comments">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="images/Saul Goodman.jpg" alt="Saul Goodman">
+
+                        <blockquote>  "Your car website is as sleek as a brand new Cadillac. It's got style, it's got class, and it's the go-to place for anyone who knows quality when they see it. Trust me, I know a good deal when I see one, and this site is the real deal!"</blockquote>
+                        <cite>- Saul Goodman</cite>
+                    </li>
+                    <li>
+                        <img src="images/Walter White.jpg" alt="Walter White">
+
+                        <blockquote>  "Your car website is truly impressive. It's meticulously designed, efficient, and commands respect—just like a well-executed plan. If you're looking for the best in the business, this is it. No half-measures."</blockquote>
+                        <cite>- Walter White</cite>
+                    </li>
+                    <li>
+                        <img src="images/Gustavo Fring.jpg" alt="Gustavo Fring">
+
+                        <blockquote>  "Your car website exemplifies precision and professionalism. It operates with the same quiet efficiency and reliability that I demand in all my ventures. This is a website that delivers exactly what it promises, with no room for error."</blockquote>
+                        <cite>- Gustavo Fring</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Max Mustermann">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="fakemail@gmail.com">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    
+                        <input type="submit" class="send-message-button" value="Send message">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3580.552814265976!2d125.73468886615743!3d39.03585420685371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slu!4v1723934020850!5m2!1sen!2slu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-button');
+                nav = document.querySelector('nav');
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+        </script>
+    </body>
+</html>
